@@ -6,7 +6,8 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            const float Pi = 3.14f;
+            int i = 1;
+            byte b = (byte)i;
         }
     }
 }
