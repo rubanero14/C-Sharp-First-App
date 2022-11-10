@@ -10,6 +10,7 @@ namespace TypeConversion
             int j = 2;
             int k = 3;
             Console.WriteLine(!(k > i || k == j));
+            Console.ReadKey();
             // Single line comment
             /* Multi line comment */
         }
