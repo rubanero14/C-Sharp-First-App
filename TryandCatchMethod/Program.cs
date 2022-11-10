@@ -20,12 +20,16 @@ namespace TryandCatchMethod
             string input2 = Console.ReadLine();
             try
             {
-                Addition(input1, input2);
-                Console.WriteLine($"Result of addition is {Addition(input1, input2)}");
+                // Console.WriteLine($"Result of addition is {Add(input1, input2)}");
+                Console.WriteLine($"Result of division is {Divide(input1, input2)}");
             }
             catch (FormatException)
             {
                 Console.WriteLine($"Format Exception, please enter correct type next time!");
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine($"Divide By Zero Exception, you have divided by zero results in infinity value!");
             }
             catch (OverflowException)
             {
@@ -35,6 +39,10 @@ namespace TryandCatchMethod
             {
                 Console.WriteLine($"Argument Null Exception, the value was empty(null)!");
             }
+            catch (Exception)
+            {
+                Console.WriteLine($"Generic Exception");
+            }
             finally
             {
                 Console.WriteLine($"This is called anyways, end of code try catch block");
@@ -42,7 +50,12 @@ namespace TryandCatchMethod
             // Console.Read();
             Console.ReadLine();
         }
-        public static double Addition(string a, string b)
+        public static double Divide(string a, string b)
+        {
+            return double.Parse(a) / double.Parse(b);
+        }
+
+        public static double Add(string a, string b)
         {
             return double.Parse(a) + double.Parse(b);
         }
