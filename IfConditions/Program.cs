@@ -13,6 +13,58 @@ namespace IfConditions
     {
         public static void Main(string[] args)
         {
+            bool isAdmin = false;
+            bool isRegistered = true;
+            string userName;
+
+            Console.Write("Enter your username: ");
+            userName = Console.ReadLine();
+
+            // Nested If Statements
+            if (isRegistered)
+            {
+                if (userName != string.Empty)
+                {
+                    if (userName.Equals("admin"))
+                    {
+                        isAdmin = true;
+                        Console.WriteLine("Hi there {0}!", userName);
+                    } else
+                    {
+                        Console.WriteLine("Hi there {0}!", userName);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("User not registered!");
+            }
+
+            // Refactored If statement as above
+            if (isRegistered && userName != string.Empty)
+            {
+                if (userName.Equals("admin"))
+                {
+                    isAdmin = true;
+                    Console.WriteLine("Hi there {0}!", userName);
+                } else
+                {
+                    Console.WriteLine("Hi there {0}!", userName);
+                }
+            }
+            else
+            {
+                Console.WriteLine("User not registered!");
+            }
+
+            if(userName != string.Empty && (isAdmin || isRegistered))
+            {
+                Console.WriteLine("You are logged in as {0}!", userName);
+            } else
+            {
+                Console.WriteLine("Please register unsername!");
+            }
+
             int temp = 1;
 
             if(temp < 10)
