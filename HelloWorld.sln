@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryandCatchMethod", "Tryand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unary Operator", "Unary Operator\Unary Operator.csproj", "{2CEFCFFF-9689-474E-BD02-F6C6D9BFCBDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfConditions", "IfConditions\IfConditions.csproj", "{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2CEFCFFF-9689-474E-BD02-F6C6D9BFCBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CEFCFFF-9689-474E-BD02-F6C6D9BFCBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CEFCFFF-9689-474E-BD02-F6C6D9BFCBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
