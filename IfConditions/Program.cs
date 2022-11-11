@@ -29,21 +29,38 @@ namespace IfConditions
 
             // Exercise with user input
             Console.WriteLine("Whats the temperature like today?");
-            int temp1 = int.Parse(Console.ReadLine());
+            string temp1 = Console.ReadLine();
+            int parsedTemp;
+            int newNum;
+            bool success;
 
-            if (temp1 < 27)
+            // Using TryParse method to type conversion and error handling
+            if (int.TryParse(temp1, out parsedTemp)){
+                success = int.TryParse(temp1, out parsedTemp);
+                newNum = parsedTemp;
+                Console.WriteLine("Parsing successful, temperature is: {0}", newNum);
+                Console.WriteLine("Type of parsedTemp {0}", newNum.GetTypeCode());
+            } else
             {
-                Console.WriteLine("Wear a warm coat!");
-            }
-            else if (temp1 == 27)
-            {
-                Console.WriteLine("It's 27 degrees Celcius out there, room temprature");
-            }
-            else
-            {
-                Console.WriteLine("Freaking hot, wear shorts and singlets and wear sunc screen!");
+                success = int.TryParse(temp1, out parsedTemp);
+                Console.WriteLine("Parsing failed!");
             }
 
+            if (success)
+            {
+                if (parsedTemp < 27)
+                {
+                    Console.WriteLine("Wear a warm coat!");
+                }
+                else if (parsedTemp == 27)
+                {
+                    Console.WriteLine("It's 27 degrees Celcius out there, room temprature");
+                }
+                else
+                {
+                    Console.WriteLine("Freaking hot, wear shorts and singlets and wear sunc screen!");
+                }
+            }
             Console.ReadKey();
         }
     }
