@@ -110,7 +110,7 @@ namespace IfConditions
                 }
                 else
                 {
-                    Console.WriteLine("Freaking hot, wear shorts and singlets and wear sunc screen!");
+                    Console.WriteLine("Freaking hot, wear shorts and singlets and wear sun screen!");
                 }
             }
             Console.ReadKey();

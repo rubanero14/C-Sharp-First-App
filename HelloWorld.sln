@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryParse - Type Conversion 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch_Case_Statements", "Switch_Case_Statements\Switch_Case_Statements.csproj", "{82D5E434-BF1B-4B30-BDCF-B26864272547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedIfStatements", "EnhancedIfStatements\EnhancedIfStatements.csproj", "{F00880FD-0061-4670-A932-AAC4CFC99159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{82D5E434-BF1B-4B30-BDCF-B26864272547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82D5E434-BF1B-4B30-BDCF-B26864272547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82D5E434-BF1B-4B30-BDCF-B26864272547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00880FD-0061-4670-A932-AAC4CFC99159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00880FD-0061-4670-A932-AAC4CFC99159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00880FD-0061-4670-A932-AAC4CFC99159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00880FD-0061-4670-A932-AAC4CFC99159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
