@@ -27,23 +27,23 @@ namespace EnhancedIfStatements
             int temp = 80;
             string stateOfWater;
 
-            if (temp < 0)
+            if (temp <= 0)
             {
                 stateOfWater = "solid";
             }
-            else if (temp >= 0 && temp <= 100)
+            else if (temp >= 100)
             {
-                stateOfWater = "liquid";
+                stateOfWater = "gas";
             }
             else
             {
-                stateOfWater = "gas";
+                stateOfWater = "liquid";
             }
             Console.WriteLine("State of water is {0}", stateOfWater);
 
             // Convert if statement above to nested ternary operator
             temp += 30;
-            stateOfWater = temp < 0 ? "solid" : ( temp >= 0 && temp <= 100 ? "liquid" : "gas" );
+            stateOfWater = temp < 0 ? "solid" : ( temp > 100 ? "gas" : "liquid" );
             Console.WriteLine("State of water is {0}", stateOfWater);
 
             Console.ReadKey();
