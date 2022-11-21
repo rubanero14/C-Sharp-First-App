@@ -10,8 +10,8 @@ namespace Types_of_Loops
     {
         static void Main(string[] args)
         {
-            // ForLoop();
-            // DoWhileLoop();
+            ForLoop();
+            DoWhileLoop();
             WhileLoop();
 
             Console.ReadKey();
