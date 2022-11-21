@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unary Operator", "Unary Ope
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfConditions", "IfConditions\IfConditions.csproj", "{ADE046A3-5D79-4FB8-9595-2803EF2D0AC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryParse - Type Conversion Method", "TryParse - Type Conversion Method\TryParse - Type Conversion Method.csproj", "{A4FB33E9-9ADA-4250-82FD-B22BA77D873B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryParse - Type Conversion Method", "TryParse - Type Conversion Method\TryParse - Type Conversion Method.csproj", "{A4FB33E9-9ADA-4250-82FD-B22BA77D873B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch_Case_Statements", "Switch_Case_Statements\Switch_Case_Statements.csproj", "{82D5E434-BF1B-4B30-BDCF-B26864272547}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch_Case_Statements", "Switch_Case_Statements\Switch_Case_Statements.csproj", "{82D5E434-BF1B-4B30-BDCF-B26864272547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedIfStatements", "EnhancedIfStatements\EnhancedIfStatements.csproj", "{F00880FD-0061-4670-A932-AAC4CFC99159}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnhancedIfStatements", "EnhancedIfStatements\EnhancedIfStatements.csproj", "{F00880FD-0061-4670-A932-AAC4CFC99159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types of Loops", "Types of Loops\Types of Loops.csproj", "{AA5FB38B-10E9-4A2E-969D-0D2A50D1B97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{F00880FD-0061-4670-A932-AAC4CFC99159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F00880FD-0061-4670-A932-AAC4CFC99159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F00880FD-0061-4670-A932-AAC4CFC99159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5FB38B-10E9-4A2E-969D-0D2A50D1B97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5FB38B-10E9-4A2E-969D-0D2A50D1B97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5FB38B-10E9-4A2E-969D-0D2A50D1B97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5FB38B-10E9-4A2E-969D-0D2A50D1B97E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
