@@ -10,7 +10,7 @@ namespace LINQ_Lambda_Expressions
     {
         static void Main(string[] args)
         {
-            IEnumerable<Person> filteredPerson = Person.GetAllPeople()/*.Where(x => x.Id == 1)*/;
+            IEnumerable<Person> filteredPerson = Person.GetAllPeople().Where(x => x.Id == 1);
 
             Console.WriteLine("List of Person Registered:");
 
