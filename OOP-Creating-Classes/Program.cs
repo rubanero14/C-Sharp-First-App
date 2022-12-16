@@ -11,10 +11,10 @@ namespace OOP_Creating_Classes
         static void Main(string[] args)
         {
             // Create object of my class, also called an instance of Human class
-            Human raj = new Human("Raj", "Ruban");
-            raj.IntroMyself();
-            Human sharm = new Human("Guga", "Sharm");
-            sharm.IntroMyself();
+            Human mickey = new Human("Mickey", "Mouse");
+            mickey.IntroMyself();
+            Human bambi = new Human("Bambi", "Deer");
+            bambi.IntroMyself();
 
             // Excercise
 
