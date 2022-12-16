@@ -16,7 +16,7 @@ namespace Extension_Methods
             var formattedNameOne = Helper.ChangeFirstCharToLowerOrUpper(name); // Helper method without static keyword, passing string as args
             Console.WriteLine(formattedNameOne);
 
-            var formattedNameTwo = name.ChangeFirstCharToLowerOrUpper(); // Helper method becomes an Extension Method just by appending to the string, not by psing as args
+            var formattedNameTwo = name.ChangeFirstCharToLowerOrUpper(); // Helper method becomes an Extension Method just by appending to the string, not by passing as args
             Console.WriteLine(formattedNameTwo);
 
             // MethodAccessException for List<int> type
@@ -30,15 +30,15 @@ namespace Extension_Methods
             }
 
             List<int> evenNumbersTwo = Helper.EvenNumbers(Numbers); // Helper method without static keyword, passing List<int> as args
-            
-            // Since this is ait, we have to use foreach method to print to console
-            foreach(var num in evenNumbersTwo)
+
+            // Since this is List type, we have to use foreach method to print to console
+            foreach (var num in evenNumbersTwo)
             {
                 Console.WriteLine(num);
             }
 
-            // Since this is ait, we have to use foreach method to print to console
-            List<int> evenNumberThree = Numbers.EvenNumbers();  // Helper method becomes an Extension Method just by appending to the List<int>, not by psing as args
+            // Since this is List type, we have to use foreach method to print to console
+            List<int> evenNumberThree = Numbers.EvenNumbers();  // Helper method becomes an Extension Method just by appending to the List<int>, not by passing as args
             foreach (var num in evenNumberThree)
             {
                 Console.WriteLine(num);
