@@ -10,7 +10,15 @@ namespace LINQ_Query_Expressions
     {
         static void Main(string[] args)
         {
-           
+           IEnumerable<Person> filteredPerson = from person in Person.GetAllPeople()
+                                                where person.Id == 1
+                                                select person;
+
+            Console.WriteLine("List of Person Registered:");
+
+            foreach (Person person in filteredPerson) {
+                Console.WriteLine($"ID: {person.Id}, Name: {person.Name}, Age: {person.Age}");
+            }
             Console.ReadKey();
         }
     }
