@@ -11,10 +11,10 @@ namespace Aggregate_Function_in_LINQ
     {
         static void Main(string[] args)
         {
-            // Instiating string Array of Countries
+            // Initiating string Array of Countries
             string[] Countries = { "Malaysia", "Singapore", "Indonesia", "Thailand", "India", "Australia", "New Zealand", "USA" };
 
-            // Instiating int Array of Numbers
+            // Initiating int Array of Numbers
             int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             // Without LINQ Aggregate Function, using custom extension method class
