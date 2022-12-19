@@ -16,9 +16,6 @@ namespace OOP_Creating_Classes
             Human bambi = new Human("Bambi", "Deer");
             bambi.IntroMyself();
 
-            // Excercise
-
-            
             Console.Read();
         }
     }
