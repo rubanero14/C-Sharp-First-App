@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension_Methods", "Extens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Aggregate_Functions", "LINQ_Aggregate_Functions\LINQ_Aggregate_Functions.csproj", "{2EE04260-842E-44FE-8E9B-70A5076F7EAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aggregate_Function_in_LINQ", "Aggregate_Function_in_LINQ\Aggregate_Function_in_LINQ.csproj", "{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{2EE04260-842E-44FE-8E9B-70A5076F7EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE04260-842E-44FE-8E9B-70A5076F7EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE04260-842E-44FE-8E9B-70A5076F7EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

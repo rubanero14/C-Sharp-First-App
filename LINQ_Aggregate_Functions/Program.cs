@@ -10,12 +10,63 @@ namespace LINQ_Aggregate_Functions
     {
         static void Main(string[] args)
         {
-            // Instintiate array of integers 1 - 10
+            // Instantiate array of integers 1 - 10
             int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            // Instintiate array of strings with country names
+            // Instantiate array of strings with country names
             string[] Countries = { "Malaysia", "Singapore", "USA", "India" };
 
+            // Without LINQ, using custome extension method class
+            int minNoLINQ = Numbers.MinNoLINQ();
+            int maxNoLINQ = Numbers.MaxNoLINQ();
+
+            int smallestEvenNumNoLINQ = Numbers.SmallestEvenNumNoLINQ();
+            int largestEvenNumNoLINQ = Numbers.LargestEvenNumNoLINQ();
+
+            int smallestOddNumNoLINQ = Numbers.SmallestOddNumNoLINQ();
+            int largestOddNumNoLINQ = Numbers.LargestOddNumNoLINQ();
+
+            int sumOfAllNumbersNoLINQ = Numbers.SumOfAllNumsNoLINQ();
+            int sumOfAllEvenNumbersNoLINQ = Numbers.Where(x => x % 2 == 0).Sum();
+            int sumOfAllOddNumbersNoLINQ = Numbers.Where(x => x % 2 == 1).Sum();
+
+            int countOfAllNumbersNoLINQ = Numbers.CountOfAllNumsNoLINQ();
+            int countOfAllEvenNumbersNoLINQ = Numbers.CountOfAllEvenNumsNoLINQ();
+            int countOfAllOddNumbersNoLINQ = Numbers.CountOfAllOddNumsNoLINQ();
+
+            double averageOfAllNumbersNoLINQ = Numbers.AverageOfAllNumsNoLINQ();
+            double averageOfAllEvenNumbersNoLINQ = Numbers.AverageOfAllEvenNumsNoLINQ();
+            double averageOfAllOddNumbersNoLINQ = Numbers.AverageOfAllOddNumsNoLINQ();
+
+            int lengthOfShortestCountryNameNoLINQ = Countries.MinLengthCountryNameNoLINQ();
+            int lengthOfLongestCountryNameNoLINQ = Countries.MaxLengthCountryNameNoLINQ();
+
+            Console.WriteLine($"Examples of operation using without LINQ, using custom extension method class:");
+            Console.WriteLine($"Min No LINQ: {minNoLINQ}");
+            Console.WriteLine($"Max No LINQ: {maxNoLINQ}\n");
+
+            Console.WriteLine($"Smallest Even Num No LINQ: {smallestEvenNumNoLINQ}");
+            Console.WriteLine($"Largest Even Num No LINQ: {largestEvenNumNoLINQ}\n");
+
+            Console.WriteLine($"Smallest Odd Num No LINQ: {smallestOddNumNoLINQ}");
+            Console.WriteLine($"Largest Odd Num No LINQ: {largestOddNumNoLINQ}\n");
+
+            Console.WriteLine($"Sum of all Nums No LINQ: {sumOfAllNumbersNoLINQ}");
+            Console.WriteLine($"Sum of all Even Nums No LINQ: {sumOfAllEvenNumbersNoLINQ}");
+            Console.WriteLine($"Sum of all Odd Nums No LINQ: {sumOfAllOddNumbersNoLINQ}\n");
+
+            Console.WriteLine($"Count of all Nums No LINQ: {countOfAllNumbersNoLINQ}");
+            Console.WriteLine($"Count of all Even Nums No LINQ: {countOfAllEvenNumbersNoLINQ}");
+            Console.WriteLine($"Count of all Odd Nums No LINQ: {countOfAllOddNumbersNoLINQ}\n");
+
+            Console.WriteLine($"Average of all Nums No LINQ: {averageOfAllNumbersNoLINQ}");
+            Console.WriteLine($"Average of all Even Nums No LINQ: {averageOfAllEvenNumbersNoLINQ}");
+            Console.WriteLine($"Average of all Odd Nums No LINQ: {averageOfAllOddNumbersNoLINQ}\n");
+
+            Console.WriteLine($"Length of Shortest Country Name No LINQ: {lengthOfShortestCountryNameNoLINQ}");
+            Console.WriteLine($"Length of Longest Country Name No LINQ: {lengthOfLongestCountryNameNoLINQ}\n");
+
+            // With LINQ based Aggregate Functions
             int min = Numbers.Min();
             int max = Numbers.Max();
 
@@ -40,7 +91,7 @@ namespace LINQ_Aggregate_Functions
             int lengthOfShortestCountryName = Countries.Min(country => country.Length);
             int lengthOfLongestCountryName = Countries.Max(country => country.Length);
 
-            Console.WriteLine($"Examples of operations using LINQ Aggregate Functions, ie: .Sum(), .Min(), .Max(), .Count() and etc. \n");
+            Console.WriteLine($"Examples of operations using LINQ Aggregate Functions, ie: .Sum(), .Min(), .Max(), .Count() and etc:");
 
             Console.WriteLine($"Min: {min}");
             Console.WriteLine($"Max: {max} \n");
