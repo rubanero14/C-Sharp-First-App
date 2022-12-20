@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Aggregate_Functions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aggregate_Function_in_LINQ", "Aggregate_Function_in_LINQ\Aggregate_Function_in_LINQ.csproj", "{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restriction_Operator_in_LINQ", "Restriction_Operator_in_LINQ\Restriction_Operator_in_LINQ.csproj", "{FE387446-3E5E-46E3-8339-5A7F248AB532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81FFD6FB-87FC-4813-BD1E-DC9F152DF576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE387446-3E5E-46E3-8339-5A7F248AB532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE387446-3E5E-46E3-8339-5A7F248AB532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE387446-3E5E-46E3-8339-5A7F248AB532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE387446-3E5E-46E3-8339-5A7F248AB532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

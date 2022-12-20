@@ -16,7 +16,7 @@ namespace LINQ_Aggregate_Functions
             // Initiating array of strings with country names
             string[] Countries = { "Malaysia", "Singapore", "USA", "India" };
 
-            // Without LINQ, using custome extension method class
+            // Without LINQ, using custom extension method class
             int minNoLINQ = Numbers.MinNoLINQ();
             int maxNoLINQ = Numbers.MaxNoLINQ();
 
@@ -27,8 +27,8 @@ namespace LINQ_Aggregate_Functions
             int largestOddNumNoLINQ = Numbers.LargestOddNumNoLINQ();
 
             int sumOfAllNumbersNoLINQ = Numbers.SumOfAllNumsNoLINQ();
-            int sumOfAllEvenNumbersNoLINQ = Numbers.Where(x => x % 2 == 0).Sum();
-            int sumOfAllOddNumbersNoLINQ = Numbers.Where(x => x % 2 == 1).Sum();
+            int sumOfAllEvenNumbersNoLINQ = Numbers.SumOfAllEvenNumsNoLINQ();
+            int sumOfAllOddNumbersNoLINQ = Numbers.SumOfAllOddNumsNoLINQ();
 
             int countOfAllNumbersNoLINQ = Numbers.CountOfAllNumsNoLINQ();
             int countOfAllEvenNumbersNoLINQ = Numbers.CountOfAllEvenNumsNoLINQ();
