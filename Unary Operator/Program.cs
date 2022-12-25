@@ -57,7 +57,7 @@ namespace Unary_Operator
             isLower = a < b;
             Console.WriteLine("Result of a < b is {0}", isLower);
 
-            // Equality oerator
+            // Equality operator
             bool isEqual;
             isEqual = a == b;
             Console.WriteLine("Result of a == b is {0}", isEqual);
@@ -66,12 +66,15 @@ namespace Unary_Operator
 
             // Conditional operators
             bool isLowerAndSunny;
+            bool isLowerOrSunny;
+
             // Condition1 AND Condition2
-            isLowerAndSunny = isLower && isSunny;
-            Console.WriteLine("Result of isLower && isSunny is {0}", isLowerAndSunny);
+            isLowerOrSunny = isLower && isSunny;
+            Console.WriteLine("Result of isLower && isSunny is {0}", isLowerOrSunny);
+
             // Condition1 OR Condition2
-            isLowerAndSunny = isLower || isSunny;
-            Console.WriteLine("Result of isLower || isSunny is {0}", isLowerAndSunny);
+            isLowerOrSunny = isLower || isSunny;
+            Console.WriteLine("Result of isLower || isSunny is {0}", isLowerOrSunny);
 
             Console.ReadKey();
         }
